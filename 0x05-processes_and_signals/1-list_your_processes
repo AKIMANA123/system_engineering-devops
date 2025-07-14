@@ -1,4 +1,2 @@
 #!/usr/bin/env bash
-# File: 1-list_your_processes
-
 ps axjf
