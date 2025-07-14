@@ -1,4 +1,2 @@
-#!/bin/bash
-# File: 0-what-is-my-pid
-
+#!/usr/bin/env bash
 echo "$$"
