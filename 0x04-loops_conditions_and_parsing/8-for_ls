@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-# This script lists non-hidden files, showing only the part after the first dash
+# This script lists non-hidden files showing only the part after the first dash
 
 for file in *; do
-  # Check if it's a regular file and contains a dash
-  if [[ -f "$file" && "$file" == *-* ]]; then
+  if [[ "$file" == *-* ]]; then
     echo "${file#*-}"
   fi
 done
