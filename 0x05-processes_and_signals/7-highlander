@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
-# This script prints "To infinity and beyond" every 2 seconds
-# and overrides SIGTERM to print "I am invincible!!!"
+# 7-highlander
 
+# Trap SIGTERM signal and run custom action
 trap 'echo "I am invincible!!!"' SIGTERM
 
-while true; do
-  echo "To infinity and beyond"
-  sleep 2
+# Infinite loop printing message every 2 seconds
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
 done
