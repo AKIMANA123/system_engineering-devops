@@ -1,2 +1,5 @@
-#!/bin/bash
-echo "Best School" > '*\'"Best School"\'\*\$\?\*\*\*\*\*\:\)'
+#!/usr/bin/env bash
+# Creates a file with a special name containing "Best School"
+
+# Create the file with the special name and content
+echo "Best School" > $'*\\\'"Best School"\\\'\\*$\\?*****:)'
