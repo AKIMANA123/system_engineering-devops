@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
-# Displays all running processes with hierarchy in a user-friendly format
+# Displays all running processes with hierarchy in specific format
 
-ps -e -o user:12,start,cmd --forest
+{
+    echo "USER STARTED CMD"
+    ps -e -o user:12,start,cmd --forest | tail -n +2
+}
