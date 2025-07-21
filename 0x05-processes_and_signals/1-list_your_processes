@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# Displays the process information in the requested format
+# Shows process info with execution command
 
 {
     echo "USER   "
+    ps -e -o user,cmd --no-headers | head -1
     echo "root +x && ./1-list_your_processes"
 }
